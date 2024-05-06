@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Label</title>
+    <link rel="stylesheet" href="../src/whitelabel.css">
+</head>
+<body>
+    <main style="max-width: 1140px">
+        <section>
+            <a name="top"></a>
+            <nav>
+                <strong>Styles</strong>
+                <a href="#type">Typography</a>
+                <a href="#forms">Forms</a>
+                <a href="#buttons">Buttons</a>
+                <a href="#table">Tables</a>
+                <a href="#grid">Grid Layout</a>
+                <a href="#utilities">Utilities</a>
+            </nav>
+            <h1>
+                White Label Classless CSS Demo
+            </h1>
+        </section>
+        <section>
+            <a name="overview"></a>
+            <h2 class="underline">
+                Overview
+                <small>( <a href="#top">top</a>)</small>
+            </h2>
+            <div>
+                <code>DIV's</code> are not the only tags available for your designs.
+                You have <code>MAIN</code> to get that nice display container.
+                <p>
+                    Need to divide major sections of your code, eh...use <code>SECTION</code> tag.
+                </p>
+                <p>
+                    And for that little extra content flair, use <code>ARTICLE</code> tag.
+                </p>
+            </div>
+        </section>
+        <section>
+            <a name="type"></a>
+            <h2>
+                Typography
+                <small>( <a href="#top">top</a>)</small>
+            </h2>
+            <div>
+                <blockquote>
+                    The alternative to good design is always bad design. there is no such thing as no design.
+                    Simplicity carried to an extreme, becomes elegance.
+                        <cite>-- Adam Judge</cite>
+                </blockquote>
+                <p>
+                    <code>P</code>
+                    All the typography uses rem for sizing. This means that accessibility is maintained for
+                    those who change their browser font size. The body element has a size of 1.15rem which
+                    makes all the standard font sizes slightly larger. This equates to 18.4px for paragraph
+                    text, instead of the standard 16px.
+                </p>
+                <p>
+                    <code>STRONG</code>
+                    <strong id="generated">Generated 1 paragraph, 52 words, 354 bytes of
+                        <a href="https://www.lipsum.com/" title="Lorem Ipsum">Lorem Ipsum</a>
+                    </strong>
+                </p>
+                <hr>
+            </div>
+            <div class="grid">
+                <div>
+                    <h1><code>H1</code> Heading...</h1>
+                    <h2><code>H2</code> Heading...</h2>
+                    <h3><code>H3</code> Heading...</h3>
+                    <h4><code>H4</code> Heading...</h4>
+                    <h5><code>H5</code> Heading...</h5>
+                    <h6><code>H6</code> Heading...</h6>
+                </div>
+                <div>
+                    <p><code>P</code> can simply be a paragraph</p>
+                    <p><code>A</code> can be a <a href="./">link</a></p>
+                    <p><code>STRONG</code> can be <strong>bold</strong></p>
+                    <p><code>U</code> can be <u>underlined</u></p>
+                    <p><code>EM</code> can be <em>emphasised</em></p>
+                    <p><code>SMALL</code> can be <small>small</small></p>
+                    <p><code>CODE</code> can be <code>code</code></p>
+                </div>
+            </div>
+            <div>
+                <code>HR</code>
+                <hr>
+            </div>
+            <div>
+                <div>
+                    <code>IMG</code>
+                </div>
+                <img src='http://via.placeholder.com/340x280' alt='Example image'>
+            </div>
+        </section>
+        <section>
+            <a name="lists"></a>
+            <h2>
+                Lists
+                <small>( <a href="#top">top</a>)</small>
+            </h2>
+            <article class="grid">
+                <div>
+                    <code>UL</code>
+                    <ul>
+                        <li><code>LI</code>List Item</li>
+                        <li><code>LI</code>List Item</li>
+                        <li><code>LI</code>List Item</li>
+                        <li><code>LI</code>List Item</li>
+                    </ul>
+                </div>
+                <div>
+                    <code>OL</code>
+                    <ol>
+                        <li><code>LI</code>List Item</li>
+                        <li><code>LI</code>List Item</li>
+                        <li><code>LI</code>List Item</li>
+                        <li><code>LI</code>List Item</li>
+                    </ol>
+                </div>
+            </article>
+        </section>
+        <section>
+            <a name="forms"></a>
+            <h2>
+                Forms
+                <small>( <a href="#top">top</a>)</small>
+            </h2>
+            <form>
+                <fieldset>
+                    <legend>Fieldset</legend>
+                    <details>
+                        <summary>Details Summary</summary>
+                        <div>
+                            Default <code>details</code> and <code>summary</code> behavior.
+                            wrap content in tag, like <code>div</code>
+                        </div>
+                    </details>
+
+                    <div>
+                        <label for='id'>User id (read only)</label>
+                        <input name='id' id='id' value='R2D2' readonly>
+                        <small>read-only</small>
+                    </div>
+                    <div>
+                        <label for='email'>Email</label>
+                        <input type='email' name='email' id='email' placeholder='email@example.com'>
+                    </div>
+                    <div>
+                        <label for='password'>Password</label>
+                        <input type='password' name='password' id='password' required>
+                    </div>
+
+                    <div>
+                        <label for='disabled'>Random disabled input</label>
+                        <input disabled name='disabled' id='disabled'
+                            placeholder='Because why not?'>
+                    </div>
+
+                    <div>
+                        <label for='selected'>Prefered theme</label>
+                        <select name="selected" id="">
+                            <option value="">Choose One</option>
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for='about'>About me</label>
+                        <textarea name='about' id='about'
+                            placeholder='I am a textarea...'></textarea>
+                    </div>
+
+                    <div>
+                        <label for='remember'>
+                            <input type='checkbox' name='remember' id='remember' checked>
+                            Remember me
+                        </label>
+                    </div>
+
+                    <section>
+                        <input type="submit"></input>
+                    </section>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <a name="buttons"></a>
+            <h2>
+                Buttons
+                <small>( <a href="#top">top</a>)</small>
+            </h2>
+            <menu>
+                <button>Default</button>
+                <button type="submit">Submit</button>
+                <button role="link">Link</button>
+            </menu>
+        </section>
+        <section>
+            <a name="table"></a>
+            <h2>
+                Tables
+                <small>( <a href="#top">top</a>)</small>
+            </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>One</th>
+                        <th>Two</th>
+                        <th>Three</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <a name="grid"></a>
+            <h2>
+                Grid Helper
+                <small>( <a href="#top">top</a>)</small>
+            </h2>
+            <p>
+                <code>.grid</code> automatically spaces evenly child elements
+            </p>
+            <article>
+                <div class="grid">
+                    <div>auto</div>
+                    <div>auto</div>
+                    <div>auto</div>
+                    <div>auto</div>
+                    <div>auto</div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
